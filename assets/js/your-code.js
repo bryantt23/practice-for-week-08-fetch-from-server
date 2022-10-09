@@ -26,4 +26,13 @@ export function postNewDogV2(name, age) {
 
 export function deleteDog(id) {
   // Your code here
+  const headers = new URLSearchParams({
+    AUTH: 'ckyut5wau0000jyv5bsrud90y'
+  });
+
+  const options = {
+    method: 'POST',
+    headers
+  };
+  return fetch(`/dogs/${id}/delete`, options);
 }
