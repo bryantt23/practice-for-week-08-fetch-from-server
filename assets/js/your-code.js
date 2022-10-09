@@ -1,19 +1,23 @@
-export function getAllDogs() {
-    // Your code here
+export async function getAllDogs() {
+  // Your code here
+  const url = '/';
+  const dogs = await fetch(url);
+  const res = await dogs.json();
+  return res;
 }
 
 export function getDogNumberTwo() {
-    // Your code here
+  // Your code here
 }
 
 export function postNewDog() {
-    // Your code here
+  // Your code here
 }
 
 export function postNewDogV2(name, age) {
-     // Your code here
+  // Your code here
 }
 
 export function deleteDog(id) {
-      // Your code here
+  // Your code here
 }
